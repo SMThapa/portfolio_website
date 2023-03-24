@@ -1,0 +1,151 @@
+.contact{
+    position: absolute;
+    top: 10%;
+    height: auto;
+}
+
+.contact .items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slogan{
+    margin: 20px 0;
+    margin: 4% 8%;
+    font-size: 1.8rem;
+}
+
+.contact-items{
+    display: flex;
+    flex-direction: column-reverse;
+    padding:0 10%;
+    margin-bottom: 5%;
+}
+
+.contact-info{
+    margin: 20px 0;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+.info .icon{
+    margin: 2px;
+}
+.info:nth-child(1){
+    color: black;
+}
+
+.forms{
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+.forms h2{
+    font-weight: 500;
+    margin-bottom: 35px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    width: fit-content;
+    animation: show_border .5s ease forwards;
+    animation-delay: 1.2s;
+}
+@keyframes show_border{
+    100%{
+        color: black;
+        border-color: black;
+    }
+}
+
+input{
+    color: crimson;
+    background-color: transparent;
+    padding: 5px;
+    margin:7px 0;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid transparent;
+    animation: border_reveal .5s ease forwards;
+    animation-delay: 1.3s;
+}
+textarea{
+    color: crimson;
+    width: 85%;
+    padding: 5px;
+    margin:7px 0;
+    font-size: 1.2rem;
+    font-family:"montserrat", sans-serif;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    animation: border_reveal .5s ease forwards;
+    animation-delay: 1.3s;
+}
+@keyframes border_reveal{
+    100%{
+        border-color: crimson;
+    }
+}
+
+/* this prevents that unnecessary mark */
+input:focus{
+    outline: none;
+}
+textarea:focus{
+    outline: none;
+}
+
+button[type=submit]{
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: transparent;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 4px 0;
+    font-size: 16px;
+    width: 100px;
+    transition: .5s;
+    animation: button_reveal .5s ease forwards;
+    animation-delay: 1.2s;
+}
+@keyframes button_reveal{
+    100%{
+        color: crimson;
+        border-color: crimson;
+    }
+}
+
+@media screen and (min-width:800px){
+    .slogan{
+        font-size: 2.5rem;
+    }
+    .contact-items{
+        flex-direction: row-reverse;
+        width: 98vw;
+        justify-content: space-between;
+        align-items: center;
+    }   
+    input{
+        width: calc(85% + 40px);
+    }
+}
+
+@media screen and (min-width:1200px){
+    .slogan{
+        font-size: 4rem;
+    }
+    .contact-items{
+        padding:0 12%;
+    }
+    input{
+        width: calc(85% + 80px);
+    }
+    textarea{
+        width: calc(85% + 100px);
+    }
+}

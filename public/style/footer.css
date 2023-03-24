@@ -1,0 +1,49 @@
+.footer{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C0C0C0;
+}
+
+.footer .items .slogan p{
+    font-size: 18px;
+}
+
+
+.footer .items a{
+    border-bottom: 1px solid crimson;  
+    font-size: 19px;
+} 
+
+@media screen and (min-width:750px){
+    .footer{
+        height: 30vh;
+    }
+    .footer .items{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer .items .slogan p{
+        font-size: 2.5rem;
+    }
+    .footer .items a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid crimson;
+        padding: 70px;
+        margin: 10px;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        transition: .3s ease-out;
+    }
+    .footer .items a:hover{
+        background-color: crimson;
+        color: white;
+    }
+
+}

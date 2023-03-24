@@ -1,0 +1,138 @@
+.body{
+    position: absolute;
+    top: 29%;
+    margin-left:8%
+}
+
+.body .btn{
+    justify-content: flex-start;
+    margin:15px 0;
+}
+.btn a{
+    transition: .5s ease;
+}
+
+.body h1{
+    font-size: 38px;
+    font-weight: 300;
+}
+.body h2{
+    font-size: 18px;
+}
+
+.body .slogan p{
+    margin:50px 0;
+}
+
+.location{
+    position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: absolute;
+	top: 85%;
+	left: 48%;
+	transform: translate(-50%, -50%);
+}
+.location h2{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.co-ordinates{
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width:600px){
+    .co-ordinates p{
+        display: none;
+    }
+}
+@media screen and (min-width:600px){
+    .body{
+        top: 28%;
+        margin-left:4%
+    }
+    .body h1{
+        font-size: 68px;
+        font-weight: 500;
+    }
+    .body h2{
+        font-size: 28px;
+    }
+    .body .slogan p{
+        position: absolute  ;
+        top: 140%;
+        font-size: 1.4rem;
+        margin:50px 0;
+    }
+    .location{
+        flex-direction: column;
+        top: 85%;
+        left: 85%;
+    }
+    .location .item h2{
+        font-size: 1.5rem;
+    }
+    .location .co-ordinates{
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:720px){
+
+    .body{
+        top: 28%;
+    }
+
+    .body h1{
+        font-size: 68px;
+        font-weight: 500;
+    }
+    .body h2{
+        font-size: 28px;
+    }
+    .body .slogan p{
+        position: absolute  ;
+        top: 140%;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+    .location{
+        top: 85%;
+    }
+    .location .item h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:900px){
+    
+    .body{
+        top: 22%;
+        margin-left:5%;
+    }
+
+    .body h1{
+        font-size: 8.5rem;
+        font-weight: 700;
+    }
+    .body h2{
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-left: 45px;
+    }
+    .body .btn{
+        margin-left: 45px;
+    }
+    .body .slogan p{
+        top: 105%;
+        margin-left:7%
+    }
+
+    .location .item{
+        display: flex;
+        flex-direction: row;
+        margin: 6px;
+    }
+}

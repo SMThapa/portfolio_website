@@ -1,0 +1,92 @@
+h1{
+    display: block;
+    width: fit-content;
+    position: relative;
+    color: transparent;
+    animation: text_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+h2, p, .items, .icon{
+    color: transparent;
+    animation: text_reveal .8s ease forwards;
+    animation-delay: 1.2s;
+}
+@keyframes text_reveal{
+    100%{
+        color: black;
+    }
+}
+
+h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: crimson;
+    animation: text_reveal_box 1s;
+    animation-delay: .5s;
+}
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+
+h1 c{
+    color: transparent;
+    animation: text_reveal_c .5s ease forwards;
+    animation-delay: 1s;
+}
+@keyframes text_reveal_c{
+    100%{
+        color: crimson;
+    }
+}
+
+.brand, a, .hamburger{
+    animation: reveal_nav 1s ease forwards;
+}
+@keyframes reveal_nav{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+
+.btn a{
+    color: transparent;
+    border-color: transparent;
+    animation: button_reveal .5s ease forwards;
+    animation-delay: 1s;
+}
+@keyframes button_reveal{
+    100%{
+        color: crimson;
+        border-color: crimson;
+    }
+}
+
+img ,.icon{
+    padding-right: 5px;
+    animation: image_delay 1.7s ease-in forwards;
+}
+@keyframes image_delay{
+    0% ,50%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,57 @@
+<% layout("./boilerplate.ejs") %>
+<link rel="stylesheet" href="../style/contact.css">
+
+<div class="contact container">
+    <div class="items">
+        <div class="slogan">
+            <h1>Let's create your dream project together.</h1>
+        </div>
+        <div class="contact-items">
+            <div class="contact-info">
+                <a class="info" href="mailto:siddharthmthapa@gmail.com" target="_blank">
+                    <div class="info">
+                        <div class="icon">
+                            <img class="icon" src="https://img.icons8.com/material/96/null/mail-account.png"/>
+                        </div>
+                        <p>siddharthmthapa@gmail.com</p>
+                    </div>
+                </a>
+                <div class="info">
+                    <div class="icon">
+                        <img class="icon" src="https://img.icons8.com/material/96/null/phone--v1.png"/>
+                    </div>
+                    <p>+91 6296781251</p>
+                </div>
+            </div>
+            <div class="forms">
+                <h2>Contact me:</h2>
+                <form action="https://formsubmit.co/siddharthmthapa@gmail.com" method="POST">
+                    <!-- Honeypot -->
+                    <input type="text" name="_honey" style="display:none">
+                    <!-- this line of code is built-in from formsubmit.co -->
+                    
+                    <!-- this disables reCAPTCHA -->
+                    <input type="hidden" name="_captcha" value="false">
+    
+                    <!-- custom success page -->
+                    <!-- <input type="hidden" name="_next" value="http://localhost:9002/contact/success"> -->
+                    <input type="hidden" name="_next" value="https://siddharth-m-thapa-web-developer.onrender.com/contact/success">
+    
+                    <p>
+                        <label for="name" >Name: <br></label>
+                        <input type="text" id="name" name="name" style="font-size: 1.2rem;" required>
+                    </p>
+                    <p>
+                        <label for="email" >Email: <br></label>
+                        <input type="email" id="email" name="email" style="font-size: 1.2rem;" required>
+                    </p>
+                    <p>
+                        <label for="querry">Mention you query, <br></label>
+                        <textarea name="querry" id="querry" cols="30" rows="3"></textarea>
+                    </p>
+                    <button type="submit">submit</button>
+               </form>
+            </div>
+        </div>
+    </div>
+</div>
