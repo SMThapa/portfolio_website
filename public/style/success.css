@@ -1,0 +1,79 @@
+.success{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.success .items{
+    position: absolute;
+    top: 32%;
+    margin: 0 10%;
+}
+
+.pikachu{
+    height: 70%;
+    width: 37%;
+}
+
+.success .items .slogan{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.success .items .slogan h1{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 3px 0;
+}
+.success .items .slogan h2{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 3px 0;
+}
+.success .items .slogan a{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 3px 0;
+}
+
+
+@media screen and (min-width:800px){
+    .success .items{
+        position: absolute;
+        top: 15%;
+        margin: 0 10%;
+    }
+    .pikachu{
+        height: 50%;
+        width: 27%;
+    }
+    
+    .success .items .slogan{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+    }
+    .success .items .slogan h1{
+        font-size: 3rem;
+        font-weight: 300;
+        padding: 8px 0;
+    }
+    .success .items .slogan h2{
+        font-size: 2rem;
+        font-weight: 500;
+        padding: 8px 0;
+    }
+    .success .items .slogan a{
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 8px 0;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    .pikachu{
+        height: 190px;
+        width: 280px;
+    }    
+}
