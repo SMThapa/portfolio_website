@@ -47,6 +47,9 @@
     .co-ordinates p{
         display: none;
     }
+    .breakPoint2{
+        display: none;
+    }
 }
 @media screen and (min-width:600px){
     .body{
@@ -76,6 +79,9 @@
     }
     .location .co-ordinates{
         align-items: center;
+    }
+    .breakPoint1{
+        display: none;
     }
 }
 
