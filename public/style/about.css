@@ -88,7 +88,7 @@
 }
 #body .image img{
     height: 320px;
-    width: 200px;
+    width: 220px;
 }
 
 #body .items .text .btn{
@@ -117,11 +117,6 @@
         align-items: center;
         margin: 20px;
     }
-
-    #body .image img{
-        height: 320px;
-        width: 200px;
-    }
 }
 
 @media screen and (max-width:1200px){
@@ -142,7 +137,9 @@
         display: none;
     }
     #body .image img{
-        height: 400px;
-        width: 250px;
+        /* this will prevent users to do any events on images section  */
+        pointer-events: none;
+        height: 410px;
+        width: 270px;
     }
 }

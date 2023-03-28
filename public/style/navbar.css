@@ -63,6 +63,11 @@
     left: 20%;
 }
 
+/* this is for mobile a tag to shift right on active */
+/* .nav-items .links .activeA{
+    left: 20%;
+} */
+
 .nav-items .links ul li{
     display: block; 
     padding: 6px;            
@@ -165,7 +170,7 @@
         font-size: 2rem;
     }
     .nav-items .links .items ul, .mini-contact{ 
-        margin-left:40px;
+        margin-left:20px;
     }
 }
 
@@ -214,5 +219,9 @@
         color: black;
         font-size: 18px;
     }
+    .nav .nav-items .links .items ul li .active{
+        left: 0%;
+        color: crimson;
+    }    
 }
 
