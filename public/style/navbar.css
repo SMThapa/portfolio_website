@@ -28,7 +28,8 @@
 /* this chunk of code hides the ul lists to the left  */
 .nav-items .links .items{
     position: absolute;
-    background-color: rgb(30, 30, 30);
+    /* background-color: rgb(30, 30, 30); */
+    background-color: #C0C0C0;
     width: 100vw;
     height: 100vh;
     left:100%;
@@ -46,11 +47,13 @@
     justify-content: flex-start;
     align-items: start;
     padding-top: 80px;
+    margin-left: 35px;
 }
 .nav-items .links .items .mini-contact{
     display: flex;
     flex-direction: column;
     padding: 95px 0;
+    margin-left: 35px;
 }
 .nav-items .links .items .mini-contact a{
     padding: 10px;
@@ -60,7 +63,7 @@
 
 /* js controls this part which reveal the hidden lists*/
 .nav-items .links .active{
-    left: 20%;
+    left: 0;
 }
 
 /* this is for mobile a tag to shift right on active */

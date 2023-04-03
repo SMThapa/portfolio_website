@@ -1,0 +1,91 @@
+.card{
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    height: 30%;
+    width: 70%;
+    animation: cardReveal .5s forwards;
+    animation-delay:.8s ;
+}
+@keyframes cardReveal{
+    100%{
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    }
+}
+.head{
+    margin: 15px;
+    max-width: 230px;
+}
+
+.projects .card .items{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding:5px 30px;
+}
+
+.foot{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.technology{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.technology img{
+    width: 50px;
+    padding: 5px;
+}
+
+.linkButton{
+    color: transparent;
+    font-size: 18px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    animation: linkButtonReveal .5s forwards;
+    animation-delay: 1s;
+}
+@keyframes linkButtonReveal {
+    100%{
+        color: crimson;
+    }
+}
+
+
+
+.linkButton img{
+    width: 30px;
+    padding: 5px;
+}
+
+@media screen and (max-width:720px){
+    .foot{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .foot{
+        margin: 10px 0;
+    }
+}
+@media screen and (max-width:500px){
+    h3{
+        display: none;
+    }
+    .card{
+        height: auto;
+    }
+    .linkButton img{
+        width: 20px;
+    }
+}

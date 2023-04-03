@@ -1,3 +1,5 @@
+
+
 #about{
     max-width: 100%;
     height: 100vh;
@@ -74,6 +76,7 @@
     flex-direction: column-reverse;
     margin: 25px 5px;
     padding: 15px;
+    margin-top: 20%;
 }
 
 
@@ -105,6 +108,7 @@
     }
 }
 @media screen and (min-width:900px){
+
     #body .body{
         height: 100vh;
     }
@@ -120,6 +124,13 @@
 }
 
 @media screen and (max-width:1200px){
+    html{
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+    }
+    section{
+        scroll-snap-align: start;
+    }
     .hi2{
         display: none;
     }
