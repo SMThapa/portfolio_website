@@ -1,3 +1,11 @@
+html{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+section{
+    scroll-snap-align: start;
+}
+
 .card{
     display: flex;
     align-items: center;
