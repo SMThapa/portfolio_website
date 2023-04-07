@@ -206,7 +206,7 @@
         padding: 0;
         display: flex;
         flex-direction: row;
-        padding-right: 20px;
+        /* padding-right: 20px; */
         margin: 0 25px;
     }
     .nav .nav-items .links .items ul li{
@@ -224,7 +224,7 @@
     }
     .nav .nav-items .links .items ul li .active{
         left: 0%;
-        color: crimson;
+        color:  crimson;
     }    
 }
 

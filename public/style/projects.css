@@ -1,99 +1,133 @@
-html{
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+.projects{
+    height: auto;
+    flex-direction: column;
+    padding: 130px 0;
 }
-section{
-    scroll-snap-align: start;
+
+h1{
+    margin-bottom: 15px;
+}
+h3{
+    padding: 0 25px;
+    animation: reveal .5s forwards;
+    animation-delay: 1.7s;
+    opacity: 0;
 }
 
 .card{
-    display: flex;
-    align-items: center;
-    border-radius: 25px;
-    height: 30%;
-    width: 70%;
-    animation: cardReveal .5s forwards;
-    animation-delay:.8s ;
-}
-@keyframes cardReveal{
-    100%{
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    }
-}
-.head{
-    margin: 15px;
-    max-width: 230px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    border-radius: 15px;
+    width: 78%;
+    height: 300px;
+    margin: 50px;
+    padding: 15px;
+    background-color: #C0C0C0;
+    transition: .5s;
+    animation: reveal .5s forwards;
+    animation-delay: .7s;
+    opacity: 0;
 }
 
-.projects .card .items{
-    display: flex;
-    height: 70%;
+.inside-card{
+    position: relative;
+    height: 100%;
     width: 100%;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.image{
+    position: relative;
+    height: 100%;
+    min-width: 441px;
+}
+
+#project .items{
+    position: relative;
+    height: 100%;
+    display: flex;
     flex-direction: column;
-    align-items: start;
     justify-content: space-between;
-    padding:5px 30px;
+    padding: 25px 20px;
 }
 
-.foot{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;    
-}
-
-.technology{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.technology img{
-    width: 50px;
-    padding: 5px;
-}
-
-.linkButton{
-    color: transparent;
-    font-size: 18px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    animation: linkButtonReveal .5s forwards;
+.buttons a{
+    border: 1px solid crimson;
+    border-radius: 5px;
+    color: crimson;
+    background-color: #C0C0C0;
+    padding: 8px 25px;
+    transition: .3s;
+    animation: reveal .5s forwards;
     animation-delay: 1s;
+    opacity: 0;
 }
-@keyframes linkButtonReveal {
-    100%{
-        color: crimson;
+
+@keyframes reveal{
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
     }
 }
 
 
-
-.linkButton img{
-    width: 30px;
-    padding: 5px;
+@media screen and (max-width:1100px){
+    .card{
+        width: 90%;
+    }
 }
 
-@media screen and (max-width:720px){
-    .foot{
+@media screen and (max-width:900px){
+    .card{
+        width: 60%;
+        height: 550px;
+        margin: 50px;
+    }
+    .inside-card{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: center;
+        overflow: hidden;
     }
-    .foot{
-        margin: 10px 0;
+    .image{
+        position: relative;
+        height: 100%;
+        min-width: 100px;
     }
 }
-@media screen and (max-width:500px){
-    h3{
-        display: none;
+
+@media screen and (max-width:700px){
+    .projects{
+        height: auto;
+        flex-direction: column;
+        padding-top: 110px;
+        padding-bottom: 70px;
     }
     .card{
-        height: auto;
+        width: 90%;
+        height: 460px;
+        margin: 40px 0;
     }
-    .linkButton img{
-        width: 20px;
+    .inside-card{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .image{
+        position: relative;
+        height: 60%;
+        min-width: 100%;
     }
 }
