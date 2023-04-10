@@ -122,13 +122,13 @@
 }
 
 @media screen and (max-width:1200px){
-    html{
+    /* html{
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
     }
     section{
         scroll-snap-align: start;
-    }
+    } */
     .hi2{
         display: none;
     }
