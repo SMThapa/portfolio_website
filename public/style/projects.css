@@ -83,7 +83,7 @@ h3{
 @media screen and (max-width:900px){
     .card{
         width: 60%;
-        height: 550px;
+        min-height: 550px;
         margin: 50px;
     }
     .inside-card{
